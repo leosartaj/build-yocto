@@ -19,7 +19,12 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
 
-RUN mkdir build
+# Create a non-root user that will perform the actual build
+RUN id yocto 2>/dev/null || useradd --uid 30000 --create-home yocto
+RUN apt-get install -y sudo
+RUN echo "yocto ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers
+
+USER yocto
 
 WORKDIR /build
 
