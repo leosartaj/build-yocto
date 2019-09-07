@@ -25,9 +25,13 @@ Checkout the release, here we checkout warrior (yocto 2.7)
 
 Initialize the build environment
 
-``source oe-init-build-env``
+``source oe-init-build-env /build/build-test``
 
 This command automatically changes dir to
 build directory.
 
-You can change the configuration in /build/poky/build/conf dir
+You can change the configuration in /build/build-test/conf dir
+
+Run to generate image.
+
+``bitbake -k core-image-minimal``
