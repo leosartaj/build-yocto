@@ -6,7 +6,7 @@ Build the docker image
 
 ``docker build . -t yocto-dev``
 
-Make the build directory
+Make the local build directory where files will be saved.
 
 ``mkdir build``
 
@@ -20,7 +20,8 @@ After running, download the source code
 
 ``cd /build/poky``
 
-Checkout the release, here we checkout warrior (yocto 2.1)
+Checkout the release, eg. krogoth (yocto 2.1)
+
 ``git checkout -b krogoth origin/krogoth``
 
 Yocto Releases can be checked [here](https://wiki.yoctoproject.org/wiki/Releases)
@@ -36,4 +37,4 @@ You can change the configuration in /build/build-test/conf dir
 
 Run to generate image.
 
-``bitbake -k core-image-minimal``
+``bitbake core-image-minimal``
