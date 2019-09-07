@@ -8,3 +8,5 @@ RUN apt-get install -y gawk wget git-core diffstat unzip texinfo gcc-multilib \
 RUN mkdir build
 
 WORKDIR /build
+
+CMD "/bin/bash"

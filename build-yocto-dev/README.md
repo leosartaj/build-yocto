@@ -12,7 +12,7 @@ Make the build directory
 
 Run the image.
 
-``docker run . --volume=${PWD}/build:/build -it yocto-dev bash``
+``docker run --volume=${PWD}/build:/build -it yocto-dev``
 
 After running, download the source code
 
