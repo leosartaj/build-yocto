@@ -8,7 +8,10 @@ Build the docker image
 
 Make the local build directory where files will be saved.
 
-``mkdir build``
+``docker volume create --name build``
+
+This make sures the filesystem is consistent with
+what the container expects for build dir.
 
 Run the image.
 
