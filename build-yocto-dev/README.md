@@ -20,8 +20,10 @@ After running, download the source code
 
 ``cd /build/poky``
 
-Checkout the release, here we checkout warrior (yocto 2.7)
-``git checkout -b warrior origin/warrior`` 
+Checkout the release, here we checkout warrior (yocto 2.1)
+``git checkout -b krogoth origin/krogoth``
+
+Yocto Releases can be checked [here](https://wiki.yoctoproject.org/wiki/Releases)
 
 Initialize the build environment
 
