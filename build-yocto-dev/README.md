@@ -17,15 +17,19 @@ Run the image.
 
 ``docker run --volume=${PWD}/build:/build -it yocto-dev``
 
+Give permission to yocto user
+
+``sudo chown -R yocto:yocto /build``
+
 After running, download the source code
 
 ``git clone git://git.yoctoproject.org/poky``
 
 ``cd /build/poky``
 
-Checkout the release, eg. krogoth (yocto 2.1)
+Checkout the release, eg. morty (yocto 2.2)
 
-``git checkout -b krogoth origin/krogoth``
+``git checkout -b morty origin/morty``
 
 Yocto Releases can be checked [here](https://wiki.yoctoproject.org/wiki/Releases)
 
@@ -40,4 +44,4 @@ You can change the configuration in /build/build-test/conf dir
 
 Run to generate image.
 
-``bitbake core-image-minimal``
+``bitbake -k core-image-minimal``
