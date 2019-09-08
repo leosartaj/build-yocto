@@ -28,7 +28,7 @@ After running, download the source code
 Initialize the build environment
 
 ```
-source /src/poky-warrior-21.0.1/oe-init-build-env /build/build-test
+source /src/poky-warrior/oe-init-build-env /build/build-test
 ```
 
 This command automatically changes dir to
