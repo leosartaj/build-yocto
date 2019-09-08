@@ -8,18 +8,14 @@ Build the docker image
 
 Make the local build directory where files will be saved.
 
-``docker volume create --name build``
+``docker volume create --name yocotvol``
 
 This make sures the filesystem is consistent with
 what the container expects for build dir.
 
 Run the image.
 
-``docker run --volume=${PWD}/build:/build -it yocto-dev``
-
-Give permission to yocto user
-
-``sudo chown -R yocto:yocto /build``
+``docker run --volume=yoctovol:/build -it yocto-dev``
 
 After running, download the source code
 
