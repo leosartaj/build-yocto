@@ -4,4 +4,4 @@ Dockerfiles for building images using the [yocto project](https://www.yoctoproje
 
 ### Images
 
-- build-yocto-dev => Development environment for building image using yocto.
+- [build-yocto-dev](build-yocto-dev/) => Development environment for building image using yocto.
