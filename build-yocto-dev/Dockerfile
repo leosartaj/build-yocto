@@ -23,8 +23,10 @@ RUN id yocto 2>/dev/null || useradd --uid 30000 --create-home yocto
 RUN apt-get install -y sudo
 RUN echo "yocto ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers
 
-USER yocto
+RUN mkdir -p /build
+RUN chown -R yocto:yocto /build
 
+USER yocto
 WORKDIR /build
 
-CMD "/bin/bash"
+CMD ["/bin/bash"]
