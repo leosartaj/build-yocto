@@ -4,34 +4,45 @@ Image for yocto development environment
 
 Build the docker image
 
-``docker build . -t yocto-dev``
+```
+docker build . -t yocto-dev
+```
 
 Make the local build directory where files will be saved.
 
-``docker volume create --name yocotvol``
+```
+docker volume create --name yocotvol
+```
 
 This make sures the filesystem is consistent with
 what the container expects for build dir.
 
 Run the image.
 
-``docker run --volume=yoctovol:/build -it yocto-dev``
+```
+docker run --volume=yoctovol:/build -it yocto-dev
+```
 
 After running, download the source code
 
-``git clone git://git.yoctoproject.org/poky``
-
-``cd /build/poky``
+```
+git clone git://git.yoctoproject.org/poky
+cd /build/poky
+```
 
 Checkout the release, eg. morty (yocto 2.2)
 
-``git checkout -b morty origin/morty``
+```
+git checkout -b morty origin/morty
+```
 
 Yocto Releases can be checked [here](https://wiki.yoctoproject.org/wiki/Releases)
 
 Initialize the build environment
 
-``source oe-init-build-env /build/build-test``
+```
+source oe-init-build-env /build/build-test
+```
 
 This command automatically changes dir to
 build directory.
@@ -40,7 +51,9 @@ You can change the configuration in /build/build-test/conf dir
 
 Run to generate image.
 
-``bitbake -k core-image-minimal``
+```
+bitbake -k core-image-minimal
+```
 
 ### Running the image using qemu
 
