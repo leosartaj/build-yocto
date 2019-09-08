@@ -8,14 +8,14 @@ Build the docker image
 docker build . -t yocto-dev
 ```
 
-Make the local build directory where files will be saved.
+Make the local build directory where files will be saved
 
 ```
 docker volume create --name yocotvol
 ```
 
 This make sures the filesystem is consistent with
-what the container expects for build dir.
+what the container expects for build dir
 
 Run the image.
 
