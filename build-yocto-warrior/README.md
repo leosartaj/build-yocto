@@ -20,7 +20,7 @@ what the container expects for build dir
 Run the image.
 
 ```
-docker run --volume=yoctovol:/build -it yocto-dev
+docker run --volume=yoctovol:/build -it yocto-warrior
 ```
 
 After running, download the source code
