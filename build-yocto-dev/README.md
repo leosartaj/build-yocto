@@ -1,3 +1,5 @@
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/leosartaj/build-yocto-dev)
+
 Image for yocto development environment
 
 ### Usage
