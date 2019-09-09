@@ -1,4 +1,4 @@
-Image for building for rasberry pi using yocto warrior release
+Image for building for rasberry pi using yocto warrior release. Adds meta-raspberrypi layer
 
 ### Usage
 
@@ -37,7 +37,7 @@ build directory.
 Copy the bblayers.conf.rpi in /src directory.  This adds meta-raspberrpi layer to default bblayers.conf.
 
 ```
-cp /src/bblayers.conf.rpi /build/build-test/conf/
+cp /src/bblayers.conf.rpi /build/build-test/conf/bblayers.conf
 ```
 
 Edit the ``MACHINE`` variable in conf/local.conf to applicable rpi board. eg. "raspberrypi3"
