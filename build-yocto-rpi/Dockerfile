@@ -9,6 +9,6 @@ RUN git clone -b warrior git://git.yoctoproject.org/meta-raspberrypi
 
 WORKDIR /build
 
-COPY bblayers.conf.rpi /src
+COPY ./bblayers.conf.rpi /src
 
 USER yocto
